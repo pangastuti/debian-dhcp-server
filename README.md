@@ -11,7 +11,7 @@
 
 ## Install DHCP Server Depedencies
 
-``apt -y install isc-dhcp-server-ldap``
+``apt -y install isc-dhcp-server``
 
 ## Backup dhcpd.conf to dhcpd.conf.backup
 
@@ -24,6 +24,7 @@
 ## Set Interface Name
 
 ``nano /etc/default/isc-dhcp-server``
+### Uncomment DHCPDv4_conf and add interfaces name in INTERFACESv4
 
 ## Change IP Address to IP Server
 
@@ -34,6 +35,9 @@
 ## Restart Network
 
 ``/etc/init.d/networking restart``
+
+## Change Hosts
+``nano /etc/hosts``
 
 ## Change Resolv.conf
 

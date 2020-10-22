@@ -5,7 +5,7 @@
 
 ## Install Net-Tools
 
-``apt-install net-tools``
+``apt -y install net-tools``
 ## Install GIT
 ``apt -y install git``
 

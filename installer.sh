@@ -32,5 +32,5 @@ nano /etc/resolv.conf
 
 ## Restart DHCP Server
 
-systemctl restart isc-dhcp-server
+/etc/init.d/isc-dhcp-server restart
 

@@ -19,17 +19,16 @@ nano /etc/default/isc-dhcp-server
 nano /etc/network/interfaces
 
 ### If you get error change auto to allow-hotplug
-
-## Restart Network
-
-/etc/init.d/networking restart
-
 ## Change Hosts
 nano /etc/hosts
 
 ## Change Resolv.conf
 
 nano /etc/resolv.conf
+
+## Restart Network
+
+/etc/init.d/networking restart
 
 ## Restart DHCP Server
 

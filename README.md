@@ -1,8 +1,12 @@
 # Requirements
 * git
+
   ``apt -y install git``
+  
 * ifconfig
+
   ``apt -y install net-tools``
+  
 # Manual 
 
 ## Install DHCP Server Depedencies

@@ -1,13 +1,4 @@
 # Manual 
-## Update Repo
-
-``apt update``
-
-## Install Net-Tools
-
-``apt -y install net-tools``
-## Install GIT
-``apt -y install git``
 
 ## Install DHCP Server Depedencies
 

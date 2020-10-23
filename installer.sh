@@ -1,49 +1,37 @@
-# Manual 
-## Update Repo
-
-``apt update``
-
-## Install Net-Tools
-
-``apt -y install net-tools``
-## Install GIT
-``apt -y install git``
-
 ## Install DHCP Server Depedencies
-
-``apt -y install isc-dhcp-server``
+apt -y install isc-dhcp-server
 
 ## Backup dhcpd.conf to dhcpd.conf.backup
 
-``cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.backup``
+cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.backup
 
 ## Set IP Range and etc.
 
-``nano /etc/dhcp/dhcpd.conf``
+nano /etc/dhcp/dhcpd.conf
 
 ## Set Interface Name
 
-``nano /etc/default/isc-dhcp-server``
+nano /etc/default/isc-dhcp-server
 ### Uncomment DHCPDv4_conf and add interfaces name in INTERFACESv4
 
 ## Change IP Address to IP Server
 
-``nano /etc/network/interfaces``
+nano /etc/network/interfaces
 
 ### If you get error change auto to allow-hotplug
 
 ## Restart Network
 
-``/etc/init.d/networking restart``
+/etc/init.d/networking restart
 
 ## Change Hosts
-``nano /etc/hosts``
+nano /etc/hosts
 
 ## Change Resolv.conf
 
-``nano /etc/resolv.conf``
+nano /etc/resolv.conf
 
 ## Restart DHCP Server
 
-``systemctl restart isc-dhcp-server``
+systemctl restart isc-dhcp-server
 
